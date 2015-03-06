@@ -168,9 +168,11 @@
 				TargetAttributes = {
 					3E93F5F91AA68B8600819A3E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = VX49L9N3QT;
 					};
 					3E93F6121AA68B8600819A3E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = VX49L9N3QT;
 						TestTargetID = 3E93F5F91AA68B8600819A3E;
 					};
 				};
@@ -346,6 +348,7 @@
 				INFOPLIST_FILE = "Tax Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +359,7 @@
 				INFOPLIST_FILE = "Tax Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -363,6 +367,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,6 +380,7 @@
 				INFOPLIST_FILE = "Tax CalculatorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tax Calculator.app/Tax Calculator";
 			};
 			name = Debug;
@@ -382,6 +389,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -389,6 +398,7 @@
 				INFOPLIST_FILE = "Tax CalculatorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tax Calculator.app/Tax Calculator";
 			};
 			name = Release;
@@ -412,6 +422,7 @@
 				3E93F61F1AA68B8600819A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E93F6201AA68B8600819A3E /* Build configuration list for PBXNativeTarget "Tax CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				3E93F6221AA68B8600819A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
